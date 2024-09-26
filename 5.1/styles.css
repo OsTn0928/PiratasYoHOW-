@@ -1,0 +1,60 @@
+/* Reset de márgenes y rellenos predeterminados, y uso de 'border-box' para incluir padding en el cálculo del ancho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000; /* Fondo negro para el sitio */
+    padding: 20px;
+}
+
+/* Contenedor principal que agrupa todo el contenido */
+.container {
+    max-width: 600px; /* Ancho máximo de 600px para centrar el contenido */
+    margin: 0 auto;   /* Centrar el contenedor en la página */
+    padding: 20px;
+}
+
+/* Estilo del título principal */
+h1 {
+    margin-bottom: 30px; /* Espacio inferior */
+    color: white;        /* Color del texto del título */
+}
+
+/* Estilo común para las filas, usando flexbox para alinear los elementos */
+.row {
+    display: flex; /* Habilita el diseño flexible para distribuir elementos */
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+    margin-bottom: 20px; /* Margen inferior entre filas */
+}
+
+/* Estilos específicos de colores de fondo para cada fila */
+#top {
+    background-color: #FFD700; /* Color oro para la primera fila */
+}
+
+#mid {
+    background-color: #90EE90; /* Color verde claro para la segunda fila */
+}
+
+#back {
+    background-color: #ADD8E6; /* Color azul claro para la tercera fila */
+}
+
+/* Estilo común para cada bloque de imágenes */
+.block {
+    padding: 10px; /* Relleno alrededor de cada imagen */
+}
+
+/* Estilos aplicados a las imágenes */
+.block img {
+    width: 150px;     /* Ancho fijo de 150px */
+    height: 150px;    /* Altura fija de 150px */
+    object-fit: cover; /* Recorta y ajusta la imagen dentro del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+}
